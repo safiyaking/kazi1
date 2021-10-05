@@ -56,11 +56,10 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <img src="assets/img/up.png" class="img-responsive" />
-                    <h3>Premium Support Company</h3>
+                    <h3>PRIVATE HOSPITAL BOARD</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
+                       Welcome to our new system that enable you to avoid to used paper based and 
+                       we are used compuerized private hospital board 
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -96,9 +95,9 @@
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <h3>Physical Location</h3>
                     <p>
-                        <i>Addresss :</i> 125/890 , New York Street,
+                        <i>Addresss :</i> 125/890 , vuga,
                         <br />
-                         United States of America (USA).
+                         Zanzibar.
                          <br />
                        &copy; 2014 yourdomian | by <a href="http://www.binarytheme.com/" style="color:#fff;" target="_blank">binarytheme.com</a>
                    
@@ -106,8 +105,8 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <h3>Get Quick Help</h3>
-                    <h4><span> Call: </span>+01-4589-987-567</h4>
-                    <h4><span>E-mail: </span>info@domain.com</h4>
+                    <h4><span> Call: </span>+255 0693858355</h4>
+                    <h4><span>E-mail: </span>swafaa.sule@gmail.com</h4>
                     <h4><span>Skype:</span> sonasup</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
