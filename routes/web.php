@@ -16,16 +16,31 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('index', function () {
-    return view('index');
-});
 Route::get('users', function () {
     return view('users');
-});   
-
+}); 
+Route::get('user/login', function () {
+    return view('user');
+}); 
+Route::get('change_password', function () {
+    return view('change_password');
+}); 
+Route::get('admin_dashboard', function () {
+    return view('admin_dashboard');
+});
+Route::get('admin_user_list', function () {
+    return view('admin_user_list');
+});  
+Route::get('admin_support_cat', function () {
+    return view('admin_support_cat');
+});  
+Route::get('user_dashboard', function () {
+    return view('user_dashboard');
+}); 
 Route::get('admin/login', function () {
     return view('admin');
 }); 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
