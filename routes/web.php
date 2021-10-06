@@ -48,3 +48,18 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 use App\Http\Controllers\PostController;
 Route::resource('posts', PostController::class);
+Route::get('/index', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+Route::resource('/posts','PostsController');
+Auth::routes();
+Route::get('/dashboard', 'DashboardController@index');
+Route::get('/', function () {
+    return view('index');
+});
+Route::prefix('app')->group(function () {
+    // Registration routes
+    Route::get('registration/create', 'RegistrationController@create')->name('app-registration-form');
+});
+// Templates
+Route::get('templates/ubold/{any}', 'UboldController@index');
