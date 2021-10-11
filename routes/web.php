@@ -65,7 +65,11 @@ Route::prefix('app')->group(function () {
 Route::get('templates/ubold/{any}', 'UboldController@index');
  // Using PHP callable syntax...
  Route::get('/users', [UserController::class, 'index']);
+ Route::get('/user/{id}', [UserController::class, 'show']);
 
  // Using string syntax...
  Route::get('/users', 'App\Http\Controllers\UserController@index');
  Route::resource('users', UserController::class, ['except' => ['create', 'edit']]);
+ Route::get('/', 'App\Http\Controllers\PagesController@index');
+ Route::resource('/', 'PagesController');
+ Route::get('/', [PagesController::class,'index']);

@@ -13,7 +13,7 @@
     <div class="container">
  
         <div class="page-header">
-            <h1>Create Product</h1>
+            <h1>Create kazi1</h1>
         </div>
  
     <!-- html form to create product will be here -->
@@ -43,7 +43,7 @@
         </tr>
         <tr>
             <td>Price</td>
-            <td><input type='text' name='price' class='form-control' /></td>
+            <td><input type='text' name='name' class='form-control' /></td>
         </tr>
         <tr>
             <td></td>
@@ -59,24 +59,22 @@ if($_POST){
  
     // include database connection
     include 'config/database.php';
- 
     try{
- 
         // insert query
-        $query = "INSERT INTO products SET name=:name, description=:description, price=:price, created=:created";
- 
+        $query = "INSERT INTO kazi1 SET name=:name, description=:description, price=:price, created=:created";
+
         // prepare query for execution
         $stmt = $con->prepare($query);
  
         // posted values
         $name=htmlspecialchars(strip_tags($_POST['name']));
         $description=htmlspecialchars(strip_tags($_POST['description']));
-        $price=htmlspecialchars(strip_tags($_POST['price']));
+        $name=htmlspecialchars(strip_tags($_POST['name']));
  
         // bind the parameters
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':description', $description);
-        $stmt->bindParam(':price', $price);
+        $stmt->bindParam(':name', $name);
  
         // specify when this record was inserted to the database
         $created=date('Y-m-d H:i:s');
@@ -90,10 +88,10 @@ if($_POST){
         }
  
     }
- 
     // show error
     catch(PDOException $exception){
         die('ERROR: ' . $exception->getMessage());
     }
 }
 ?>
+

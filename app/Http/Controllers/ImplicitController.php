@@ -18,3 +18,4 @@ class ImplicitController extends Controller {
       echo 'password method';
    }
 }
+Route::controller('','<class-name-of-the-controller>');

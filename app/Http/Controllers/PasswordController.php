@@ -13,3 +13,4 @@ oute::resources([
     'picture' => 'DpController'
 ]
 );
+
